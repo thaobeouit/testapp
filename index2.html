@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main2.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="love-message">
+        <h1>Em là người duy nhất trong trái tim anh!</h1>
+        <img src="{{ url_for('static', filename='image/love.png') }}" alt="Heart" width="300">
+        <p>Chúng ta sẽ có một tương lai tươi đẹp cùng nhau!</p>
+    </div>
+
+    <audio src="{{ url_for('static', filename='music.mp3') }}" autoplay controls hidden></audio>
+    
+    <script src="{{ url_for('static', filename='main2.js') }}"></script>
+</body>
+</html>
